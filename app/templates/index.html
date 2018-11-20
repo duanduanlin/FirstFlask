@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <!h1定义一个大标题>
+    <h1>Hi,{{ user.name }}!</h1>
+    <h2>Hi,{{ user.name }}!</h2>
+    <h3>Hi,{{ user.name }}!</h3>
+    <h4>Hi,{{ user.name }}!</h4>
+    <h5>Hi,{{ user.name }}!</h5>
+    <h6>Hi,{{ user.name }}!</h6>
+    <p>This is a test!!!</p>        <!p定义一个段落>
+    <!定义一个图片>
+    <img src="../static/images/logo.png" width="48" height="47" alt="LOGO" usemap="#logomap"/>
+     <!定义一个图像内区域>
+    <map name="logomap">
+        <area shape="rect" coords="0,0,48,47" alt="logo" href="www.duanduanlin.com">
+    </map>
+    <!定义一个缩写>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+   <!定义一个作者>
+    <address>
+    Written by <a href="mailto:18899533550@163.com">D.L.d.</a>.<br>
+    Visit us at:<br>
+    duanduanlin.com<br>
+    Baoan D406, ShenZhen<br>
+    China
+    </address>
+{% endblock %}

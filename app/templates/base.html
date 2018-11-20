@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                  <!head表示文档元数据>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }} - FirstFlask</title>         <!title表示文档的标题>
+    {% else %}
+        <title>Welcom to FirstFlask</title>
+    {% endif %}
+</head>
+<body>                                                  <!body包含可见页面内容>
+    <div>FirstFlask:<a href="/index">Home</a> </div>
+    <hr/>
+    {% block content %}{% endblock %}
+</body>
+</html>
